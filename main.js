@@ -12,7 +12,7 @@ function lightLoading() {
 }
 
 const pokeSearch = async () => {
-  let inputValue = input.value;
+  let inputValue = input.value.toLowerCase();
   let datos = [];
 
   try {
