@@ -43,8 +43,8 @@
 #innerLight {
   border-radius: 35px;
   height: 35px;
-  width: 35px;
-  border: 2px solid blue;
+  width: 39px;
+
   background-color: blue;
   animation: blink 200ms infinite;
   visibility: visible;
