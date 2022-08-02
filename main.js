@@ -31,7 +31,7 @@ const pokeSearch = async () => {
         datos.stats[i].base_stat
       }</p>  `;
     }
-    stats.innerHTML += `<h3>HABILIDADES:</h3>`;
+    stats.innerHTML += `<h3>HABILIDADES BASE:</h3>`;
     for (let j = 0; j < datos.abilities.length; j++) {
       stats.innerHTML += `<p> Hablilidad ${[j + 1]}: ${
         datos.abilities[j].ability.name
