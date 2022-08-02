@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Pokedex API</title>
+  </head>
+  <body>
+    <div id="wrapperGral">
+      <div id="pokedexWrapper">
+        <div id="light">
+          <div class="searching"></div>
+        </div>
+        <div id="pokedexScreen">
+          <img id="pokedexImg" alt="" />
+          <div id="stats"></div>
+        </div>
+        <div id="inputWrapper">
+          <input
+            type="text"
+            name=""
+            id="input"
+            placeholder="Nombre del Pokemon"
+          />
+          <button type="submit" id="searchBtn" onclick="pokeSearch()"></button>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

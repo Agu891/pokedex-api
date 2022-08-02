@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;1,100;1,300&display=swap");
+
+:root {
+  --fontgral: "DM Sans", sans-serif;
+}
+* {
+  margin: 0;
+}
+#wrapperGral {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+#pokedexWrapper {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 450px;
+  background-color: red;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 15px;
+}
+#light {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 35px;
+  height: 35px;
+  width: 35px;
+  border: 2px solid blue;
+  margin: 15px 0 0 15px;
+  background: rgb(14, 106, 115);
+  background: linear-gradient(
+    167deg,
+    rgba(14, 106, 115, 1) 24%,
+    rgba(28, 131, 227, 1) 91%
+  );
+  z-index: 0;
+}
+
+#innerLight {
+  border-radius: 35px;
+  height: 35px;
+  width: 35px;
+  border: 2px solid blue;
+  background-color: blue;
+  animation: blink 200ms infinite;
+  visibility: visible;
+}
+
+@keyframes blink {
+  from {
+    background-color: blue;
+  }
+  to {
+    background-color: greenyellow;
+  }
+}
+
+#pokedexScreen {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#pokedexImg {
+  margin-top: 15px;
+  background-image: url("./IMG/grass.jpg");
+  background-position: center;
+  background-size: cover;
+  border: 1px solid black;
+  width: 80vw;
+  min-height: 250px;
+  max-width: 350px;
+  align-self: center;
+  border-radius: 15px;
+}
+
+#stats {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#stats > p {
+  font-family: var(--fontgral);
+  font-weight: 500;
+}
+#inputWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
+  margin-top: 15px;
+}
+
+#inputWrapper > #searchBtn {
+  border: 2px solid yellow;
+  padding: 10px;
+  border-radius: 35px;
+  background: rgb(198, 208, 40);
+  background: linear-gradient(
+    167deg,
+    rgba(198, 208, 40, 1) 24%,
+    rgba(142, 227, 28, 1) 91%
+  );
+  color: white;
+  font-weight: 500;
+  font-size: 1.2rem;
+  font-family: var(--fontgral);
+  margin-top: 5px;
+  width: 45px;
+  height: 45px;
+}
+
+#inputWrapper > #input {
+  padding: 10px;
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+}
